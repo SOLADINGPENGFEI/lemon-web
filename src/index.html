@@ -1,57 +1,109 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <title></title>
     <script src="js/libs/mui.min.js"></script>
-    <link href="css/mui.min.css" rel="stylesheet"/>
-    <script type="text/javascript" charset="utf-8">
-      	mui.init();
-    </script>
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/mui.picker.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
 </head>
+
 <body>
-	<div class="wrap">
-		<header class="header">
-			<div class="title">
-				<span class="years-spent">年花费(元)</span>
-				<span>年</span>
-				<span>2018</span>
-			</div>
-			<div><h1 class="year-money">100000.00</h1></div>
-			<div class="year-income">
-				<div class="yincome">年收入 1000.00</div>
-				<div class="setting">
-					<span>设置预算</span>
-					<a><span class="mui-icon mui-icon-gear-filled"></span></a>
-				</div>
-			</div>
-		</header>
-		<section class="main">
-			<div class="bill-nav">
-				<a><span class="mui-icon mui-icon-home-filled"></span></a>
-				<div class="tab">
-					<span class="bill">账单</span>
-					<span class="chart">图表</span>
-				</div>
-				<a><span class="mui-icon mui-icon-search"></span></a>
-			</div>
-		</section>
-		<footer class="footer">
-			<div class="sidebar-nav">
-				<a><span class="mui-icon mui-icon-home-filled"></span></a>
-				<p>首页</p>
-			</div><div class="sidebar-nav">
-				<a><span class="mui-icon mui-icon-person-filled"></span></a>
-				<p>圈子</p>
-			</div><div class="sidebar-nav">
-				<a><span class="mui-icon mui-icon-image"></span></a>
-				<p>撒钱中</p>
-			</div><div class="sidebar-nav">
-				<a><span class="mui-icon mui-icon-contact mui-icon-icon-contact-filled"></span></a>
-				<p>我的</p>
-			</div>
-		</footer>
-	</div>
+
+    <div class="wrap">
+        <!-- 侧滑导航根容器 -->
+        <div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+            <!-- 菜单容器 -->
+            <aside class="mui-off-canvas-left">
+                <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <!-- 菜单具体展示内容 -->
+
+                    </div>
+                </div>
+            </aside>
+            <!-- 主页面容器 -->
+            <div class="mui-inner-wrap">
+                <!-- 主页面标题 -->
+                <div class="mui-content wrap">
+                    <!-- 主界面具体展示内容 -->
+                    <header class="header">
+                        <div class="title">
+                            <h5 class="years-spent">年花费</h5>
+                            <span>1000000.00</span>
+                        </div>
+                        <div class="year-income">
+                            <span>本月收入</span>
+                            <span class="yincome">100000.00</span>
+                        </div>
+                        <div class="y-list">
+                            <div><span>年</span><i class="mui-icon mui-icon-arrowdown"></i></div>
+                            <div><span>2018</span><i class="mui-icon mui-icon-arrowdown"></i></div>
+                        </div>
+                    </header>
+                    <section class="main">
+                        <div class="bill-nav">
+                            <div class="side">
+                                <i class="mui-icon mui-icon-bars"></i>
+                            </div>
+                            <div class="bill">
+                                <span class="active">账单</span>
+                                <span>图标</span>
+                            </div>
+                            <div class="search">
+                                <i class="mui-icon mui-icon-search"></i>
+                            </div>
+                        </div>
+                        <div class="pay">
+                            <div class="month">
+                                <i class="mui-icon mui-icon-bars"></i>
+                                <span>10月</span>
+                            </div>
+                            <div class="pay-sort">
+                                <span class="spend">花费<p>8125.00</p></span>
+                                <span class="income">收入<p>1000.00</p></span>
+                                <span class="sur">结余<p>-7125.00</p></span>
+                            </div>
+                            <div class="icon">
+                                <i class="mui-icon mui-icon-arrowdown"></i>
+                            </div>
+                        </div>
+                    </section>
+                    <nav class="mui-bar mui-bar-tab">
+                    	<a class="mui-tab-item mui-active" href="#tabbar">
+                    		<span class="mui-icon mui-icon-home"></span>
+                    		<span class="mui-tab-label">首页</span>
+                    	</a>
+                    	<a class="mui-tab-item" href="#tabbar-with-chat">
+                    		<span class="mui-icon mui-icon-email"><span class="mui-badge">9</span></span>
+                    		<span class="mui-tab-label">消息</span>
+                    	</a>
+                    	<a class="mui-tab-item" href="#tabbar-with-contact">
+                    		<span class="mui-icon mui-icon-contact"></span>
+                    		<span class="mui-tab-label">通讯录</span>
+                    	</a>
+                    	<a class="mui-tab-item" href="#tabbar-with-map">
+                    		<span class="mui-icon mui-icon-gear"></span>
+                    		<span class="mui-tab-label">设置</span>
+                    	</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <script src="js/libs/flexible.js"></script> -->
+    <script src="js/libs/require.js"></script>
+    <script>
+        require(['js/main.js'], () => {
+            require(['index'])
+        })
+    </script>
 </body>
+
 </html>

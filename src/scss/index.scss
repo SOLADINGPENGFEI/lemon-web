@@ -1,0 +1,153 @@
+@import "common";
+@import "_minix";
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .header {
+        width: 100%;
+        height: px2rem(150px);
+        background: #ebb70f;
+        .title {
+            padding: px2rem(15px) px2rem(15px);
+            .years-spent {
+                font-size: px2rem(14px);
+                color: #000;
+            }
+            span {
+                margin-top: px2rem(10px);
+                display: block;
+                font-size: px2rem(36px);
+                font-weight: bold;
+            }
+        }
+        .year-income {
+            padding: px2rem(15px) px2rem(15px);
+            span {
+                font-size: px2rem(14px);
+            }
+            .yincome {
+                font-size: px2rem(20px);
+                font-weight: bold;
+            }
+        }
+        .y-list {
+            position: absolute;
+            right: px2rem(20px);
+            top: px2rem(20px);
+            font-size: px2rem(18px);
+            display: flex;
+            span {
+                // display: block;
+                border: px2rem(1px) solid #000;
+                border-radius: px2rem(20px);
+                height: px2rem(30px);
+                line-height: px2rem(30px);
+                margin-left: px2rem(10px);
+            }
+        }
+    }
+    .main {
+        width: 100%;
+        flex: 1;
+        .bill-nav {
+            width: 100%;
+            height: px2rem(50px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            .side {
+                width: 10%;
+                height: 100%;
+                line-height: px2rem(50px);
+                text-align: center;
+                i {
+                    font-size: px2rem(26px);
+                }
+            }
+            .bill {
+                width: 40%;
+                height: 80%;
+                text-align: center;
+                display: flex;
+                border: px2rem(1px) solid #000;
+                span {
+                    width: 50%;
+                    height: 100%;
+                    font-size: px2rem(18px);
+                    line-height: px2rem(40px);
+                    &.active {
+                        background: #e6aa06;
+                    }
+                }
+            }
+            .search {
+                width: 10%;
+                height: 100%;
+                text-align: center;
+                i {
+                    font-size: px2rem(26px);
+                    line-height: px2rem(50px);
+                }
+            }
+        }
+        .pay {
+            width: 100%;
+            height: px2rem(50px);
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+            background: #fff;
+            .month {
+                width: 30%;
+                height: 100%;
+                line-height: px2rem(50px);
+                i {
+                    font-size: px2rem(26px);
+                }
+                span {
+                    font-size: px2rem(18px);
+                }
+            }
+            .pay-sort {
+                width: 60%;
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .spend {
+                    color: #fa0c0c;
+                    font-size: px2rem(16px);
+                    p {
+                        color: #fa0c0c;
+                    }
+                }
+                .income {
+                    color: #0cfaab;
+                    font-size: px2rem(16px);
+                    p {
+                        color: #0cfaab;
+                    }
+                }
+                .sur {
+                    color: #ccc;
+                    font-size: px2rem(16px);
+                    p {
+                        color: #ccc;
+                    }
+                }
+            }
+            .icon {
+                width: 10%;
+                height: 100%;
+                line-height: px2rem(50px);
+                i {
+                    font-size: px2rem(26px);
+                }
+            }
+        }
+    }
+}
