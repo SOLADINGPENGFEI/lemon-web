@@ -188,7 +188,7 @@ html {
         font-size: 0.96rem;
         font-weight: bold; }
     .wrap .header .year-income {
-      padding: 0.4rem 0.4rem; }
+      padding: 0.26667rem 0.4rem; }
       .wrap .header .year-income span {
         font-size: 0.37333rem; }
       .wrap .header .year-income .yincome {
@@ -196,16 +196,18 @@ html {
         font-weight: bold; }
     .wrap .header .y-list {
       position: absolute;
-      right: 0.53333rem;
-      top: 0.53333rem;
+      right: 0.26667rem;
+      top: 0.26667rem;
       font-size: 0.48rem;
       display: flex; }
-      .wrap .header .y-list span {
+      .wrap .header .y-list div {
         border: 0.02667rem solid #000;
         border-radius: 0.53333rem;
-        height: 0.8rem;
-        line-height: 0.8rem;
         margin-left: 0.26667rem; }
+        .wrap .header .y-list div span {
+          padding: 10px 15px;
+          height: 0.8rem;
+          line-height: 0.8rem; }
   .wrap .main {
     width: 100%;
     flex: 1; }

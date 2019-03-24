@@ -23,7 +23,7 @@
             }
         }
         .year-income {
-            padding: px2rem(15px) px2rem(15px);
+            padding: px2rem(10px) px2rem(15px);
             span {
                 font-size: px2rem(14px);
             }
@@ -34,17 +34,19 @@
         }
         .y-list {
             position: absolute;
-            right: px2rem(20px);
-            top: px2rem(20px);
+            right: px2rem(10px);
+            top: px2rem(10px);
             font-size: px2rem(18px);
             display: flex;
-            span {
-                // display: block;
+            div {
                 border: px2rem(1px) solid #000;
                 border-radius: px2rem(20px);
-                height: px2rem(30px);
-                line-height: px2rem(30px);
                 margin-left: px2rem(10px);
+                span {
+                    padding: 10px 15px;
+                    height: px2rem(30px);
+                    line-height: px2rem(30px);
+                }
             }
         }
     }
